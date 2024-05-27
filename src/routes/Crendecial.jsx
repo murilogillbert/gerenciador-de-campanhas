@@ -1,0 +1,1 @@
+//ALterna entre um componente login e um cadastro
