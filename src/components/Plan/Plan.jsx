@@ -1,6 +1,6 @@
 // Plan.js
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
 const Name = styled.div`
 display: flex;

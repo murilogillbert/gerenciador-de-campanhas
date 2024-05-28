@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 
 const NavbarContainer = styled.div`
@@ -65,16 +66,15 @@ export default function Navbar({ imgPath }) {
         </Logo>
         <Menu>
           <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#plan">Planos</a></li>
-            <li><a href="#feeds">Opiniões</a></li>
+            <li> <Link to="/#about">Sobre</Link></li>
+            <li><Link to="/#plan">Planos</Link></li>
+            <li><Link to="#feeds">Opiniões</Link></li>
           </ul>
         </Menu>
         <Account>
 
-
-          <button>Login</button>
-          <button>Cadastro</button>
+          <Link to="Credencial/Login"><button>Login</button></Link>
+          <Link to="Credencial/Cadastro"><button>Cadastro</button></Link>
         </Account>
       </NavbarContainer>
     </>
