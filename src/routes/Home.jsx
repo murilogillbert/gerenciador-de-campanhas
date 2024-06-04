@@ -4,8 +4,15 @@ import About from '../components/About/About';
 import Plan from '../components/Plan/Plan';
 
 export default function Home() {
+
+  const div = styled.div`
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  `
+
   return (
-    <>
+    <div className='home'>
 
       <section id="about">
         <About
@@ -17,6 +24,6 @@ export default function Home() {
       <section id="plan">
         <Plan />
       </section>
-    </>
+    </div>
   );
 }

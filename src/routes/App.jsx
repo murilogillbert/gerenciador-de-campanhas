@@ -30,8 +30,9 @@ const Nav = styled.nav`
 `;
 
 const Main = styled.main`
-  display: contents;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
 `;
 
 const FooterContainer = styled.footer`
